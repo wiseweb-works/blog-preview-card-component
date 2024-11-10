@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --main-font: "Figtree", serif;
+  --font-weight-medium: 500;
+  --font-weight-bold: 800;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--font-size-md);
+  background-color: var(--yellow);
+  font-family: var(--main-font);
+  color: var(--gray-950);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 384px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 8px 8px 0px black;
+  background-color: var(--white);
+}
+
+.hero {
+  background-image: url(./images/illustration-article.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin: 24px;
+  border-radius: 10px;
+}
+
+.text-area {
+  margin: 0px 24px;
+}
+
+.learning {
+  display: inline-block;
+  background-color: var(--yellow);
+  border-radius: 4px;
+  font-weight: var(--font-weight-bold);
+  padding: 4px 12px;
+  font-size: var(--font-size-sm);
+  margin-bottom: 12px;
+  line-height: 150%;
+}
+
+.published {
+  font-size: var(--font-size-sm);
+  margin-bottom: 12px;
+  line-height: 150%;
+  font-weight: var(--font-weight-medium);
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  line-height: 150%;
+  margin-bottom: 12px;
+  font-weight: var(--font-weight-bold);
+}
+
+.title:hover {
+  color: var(--yellow);
+}
+
+.description {
+  font-size: var(--font-size-md);
+  line-height: 150%;
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-500);
+}
+
+.profile {
+  margin: 24px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile img {
+  width: 32px;
+  height: 32px;
+}
+
+.profile p {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: 150%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 327px;
+  }
+  .learning,
+  .published {
+    font-size: var(--font-size-xs);
+  }
+  .title {
+    font-size: var(--font-size-lg);
+  }
+  .description {
+    font-size: var(--font-size-sm);
+  }
+}
